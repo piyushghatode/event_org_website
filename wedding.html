@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEDDING</title>
+    
+    <style>
+        body {
+  margin: 0;
+  background: #020202;
+  cursor: crosshair;
+}
+.center {
+  text-align: center;
+  padding: 0%;
+  margin: auto;
+}
+.birthday{
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+img {
+  max-width: 320px;
+  float: left;
+  border: 3px solid rgb(176, 112, 112);
+  border-radius: 10px;
+  margin-right: 15px;
+}
+.birthday2 {
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mainheading {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  font-family: Nunito;
+  color: cornflowerblue;
+  font-size: 50px;
+}
+.mainheading:hover {
+  color:wheat;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.catrins {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: cornflowerblue;
+  font-size: 50px;
+  padding: 20px;
+}
+.catrins:hover {
+  color:wheat;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.birthday1 {
+  display: flex;
+  color: wheat;
+}
+.birthday3 {
+  display: flex;
+  color: wheat;
+}
+/* footer */
+
+.footer{
+    background: #111;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap: 1.5rem;
+    display: flex;
+}
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: #fff;
+    display: flex;
+
+}
+.footer .box-container .box a{
+    display:block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #fff;
+    display: flex;
+}
+.footer .box-container a i{
+    padding-right: .5rem;
+    color: var(--main-color);
+    display: flex;
+}
+.footer .box-container .box a:hover i{
+    padding-right:2rem;
+    color: #fff;
+    display: flex;
+}
+.center {
+    background:#111;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    border-top: .1rem solid #222;
+    display: flex;
+}
+#confetti {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .confetti-piece {
+            width: 10px;
+            height: 10px;
+            background-color: #e44d26;
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+h2 {
+    color: #fff;
+    display: flex;
+    font: 1000;
+    text-align: center;
+}
+canvas{display:block}
+h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 5em;
+  font-weight: 900;
+  -webkit-user-select: none;
+  user-select: none;
+}
+    </style>
+</head>
+<body>
+    <h1> WEDDING PLANNER</h1>
+<canvas id="birthday"></canvas>
+<h2 class="mainheading">FOR DECORATION DETAILS</h2>
+<div id="images-container">
+    <h2 class="birthday">STAGE DECORATION</h2>
+    <img src="C:\Users\user\Pictures\b53bf2bf58508a339d20b14cf1e58c13.jpg" alt="Balloon" class="birthday-image" width="1000" height="400">
+    <div class="birthday1">
+      <p>Designing the stage for your wedding is a key element in creating the overall ambiance and aesthetic of the event. Here are some ideas and considerations for wedding stage decoration:
+
+        1. **Theme and Color Scheme:**
+           - Choose a theme and color scheme that complements the overall wedding decor.
+           - Popular themes include romantic, rustic, vintage, modern, or cultural themes.
+        
+        2. **Backdrop:**
+           - The backdrop is a focal point of the stage. Options include floral walls, fabric draping, or personalized backdrops with the couple's names or monogram.
+           - Consider incorporating lighting elements such as fairy lights, LED screens, or projections.
+        
+        3. **Floral Arrangements:**
+           - Use fresh flowers or artificial flowers to create stunning arrangements on and around the stage.
+           - Floral arrangements can be placed on the backdrop, at the sides of the stage, or even as a part of the seating.
+        
+        4. **Seating for the Couple:**
+           - Decorate the chairs or thrones for the bride and groom with fabrics, flowers, or signage.
+           - Consider adding cushions or throws that match the overall theme.
+        
+        5. **Lighting:**
+           - Lighting plays a crucial role in setting the mood. Use a combination of ambient, task, and accent lighting.
+           - Consider string lights, fairy lights, chandeliers, or spotlights to highlight specific elements of the stage.
+        
+        6. **Furniture and Props:**
+           - Incorporate decorative furniture pieces such as antique chairs, love seats, or stylish couches.
+           - Use props that align with the theme, such as vintage suitcases, lanterns, or cultural artifacts.
+        
+        7. **Draperies and Fabrics:**
+           - Use luxurious fabrics for draping, such as satin, silk, or chiffon.
+           - Consider creating a canopy or tent effect over the stage for a romantic touch.
+        
+        8. **Signage and Quotes:**
+           - Add personalized signage or quotes that reflect the couple's love story or convey a special message.
+           - Consider using calligraphy or custom lettering for a stylish look.
+        
+        9. **Cultural Elements:**
+           - If applicable, incorporate cultural elements that hold significance for the couple.
+           - This could include traditional fabrics, symbols, or artifacts.
+        
+        10. **Stage Floor:**
+            - Consider covering the stage floor with a carpet or decorative flooring material that complements the overall design.
+            - Incorporate a monogram or design on the floor if feasible.
+        
+        11. **Balloon Decor:**
+            - Balloons can be used creatively to add color and vibrancy to the stage.
+            - Create balloon garlands or clusters that match the wedding color palette.
+        
+        12. **Interactive Displays:**
+            - Consider interactive displays like a photo booth, a wishing tree, or a timeline of the couple's relationship.
+            - These elements engage guests and make the stage more than just a visual backdrop.
+        
+        Remember that the key to a beautiful wedding stage is personalization and attention to detail. Work closely with your decorator or planner to ensure that the stage reflects your style and creates a memorable backdrop for your special day.</p>
+    </div>
+    <h2 class="birthday">WEDDING CAKE</h2>
+    <img src="C:\Users\user\Pictures\th.jpg" alt="Cake" class="birthday-image" width="1000" height="400">
+   <div class="birthday1"> 
+    <p>Here's some detailed information about wedding cakes to help you in the planning process:
+
+      1. **Types of Wedding Cakes:**
+         - **Traditional Tiered Cake:** A classic choice with multiple layers stacked on top of each other.
+         - **Cupcake Tower:** Individual cupcakes arranged in tiers, providing a modern and convenient alternative.
+         - **Dessert Buffet:** A selection of various desserts like cupcakes, cake pops, and mini-pastries for a diverse and visually appealing display.
+         - **Naked Cake:** A cake with minimal frosting on the outside, showcasing the layers and fillings.
+         - **Fondant vs. Buttercream:** Fondant offers a smooth and polished finish, while buttercream provides a softer, more rustic look.
+      
+      2. **Flavors:**
+         - **Classic Flavors:** Vanilla, chocolate, red velvet, and lemon are popular choices.
+         - **Custom Flavors:** Consider unique flavors like champagne, lavender, or even a favorite cocktail-inspired cake.
+      
+      3. **Fillings:**
+         - **Buttercream:** A versatile and popular choice available in various flavors.
+         - **Fruit Preserves:** Adds a fruity layer between cake tiers.
+         - **Ganache:** A rich chocolate filling or covering.
+         - **Cream Cheese:** Ideal for red velvet or carrot cakes.
+      
+      4. **Design and Decorations:**
+         - **Floral Decor:** Fresh flowers or edible flowers can be used for a romantic touch.
+         - **Topper:** Personalized cake toppers, figurines, or initials.
+         - **Fondant Decorations:** Intricate designs, patterns, or even sculpted figures.
+         - **Metallic Accents:** Gold or silver leaf, metallic fondant, or metallic-colored details.
+         - **Rustic Elements:** Burlap, twine, or wood accents for a rustic-themed wedding.
+      
+      5. **Allergies and Dietary Restrictions:**
+         - **Gluten-Free:** Cakes made without gluten-containing ingredients.
+         - **Dairy-Free:** Suitable for lactose-intolerant or vegan guests.
+         - **Nut-Free:** Ensures the absence of nuts or nut products.
+      
+      6. **Tasting and Consultation:**
+         - Schedule a tasting with your chosen baker to sample different flavors and discuss design ideas.
+         - Bring inspiration photos, color swatches, and details about your wedding theme to the consultation.
+      
+      7. **Budgeting:**
+         - Wedding cakes can range widely in price. Discuss your budget with the baker to find options that align with your financial plan.
+      
+      8. **Delivery and Set-Up:**
+         - Ensure that the baker provides delivery and set-up services at the wedding venue.
+         - Professional set-up ensures the cake looks perfect and remains stable.
+      
+      9. **Storage of Top Tier:**
+         - If you plan to save the top tier for your first anniversary, discuss the best way to preserve it with your baker.
+      
+      10. **Communication and Contracts:**
+          - Clearly communicate your preferences, and ensure that all details are included in the contract.
+          - Include information about delivery time, set-up location, and any specific instructions.
+      
+      Remember, the wedding cake is a centerpiece of the celebration, and the process of choosing and designing it should be enjoyable. Work closely with your baker to create a cake that reflects your style and tastes.</p>
+    </div>
+    <h2 class="birthday">DESTINATION WEDDING</h2>
+    <img src="C:\Users\user\Pictures\destination-Wedding-photorapher-rayong-mariott-decor-2400x1597.jpg" alt="Gift" class="birthday-image" width="1000" height="400">
+  <div class="birthday1">
+    <p>Planning a destination wedding involves careful consideration of various factors to ensure a smooth and memorable event. Here is some information and guidance to help you with your destination wedding:
+
+      1. **Choose a Location:**
+         - Consider a location that holds special meaning for you and your partner or a place you both have always dreamed of visiting.
+         - Research destination wedding hotspots, taking into account the climate, local attractions, and legal requirements for getting married.
+      
+      2. **Budgeting:**
+         - Determine your budget early on, including travel expenses for you and your guests.
+         - Destination weddings can be cost-effective in some locations, but it's essential to account for potential additional expenses.
+      
+      3. **Legal Requirements:**
+         - Understand the legal requirements for getting married in your chosen destination.
+         - Some countries have residency requirements or specific documentation you must provide.
+      
+      4. **Guest List:**
+         - Be mindful that not all guests may be able to attend a destination wedding due to travel expenses and time commitments.
+         - Send out save-the-date cards well in advance to give guests ample time to plan.
+      
+      5. **Accommodations:**
+         - Research and negotiate group rates with hotels or resorts for your guests.
+         - Consider all-inclusive packages that may simplify planning and budgeting.
+      
+      6. **Local Wedding Planner:**
+         - Hire a local wedding planner who is familiar with the destination.
+         - A local planner can assist with legal requirements, recommend vendors, and handle logistics.
+      
+      7. **Visit in Advance:**
+         - If possible, visit the destination in advance to scout venues, meet vendors, and finalize details.
+         - This will also help you get a feel for the local culture and ensure you're comfortable with your chosen location.
+      
+      8. **Weather Considerations:**
+         - Research the weather patterns of your chosen destination and plan your wedding date accordingly.
+         - Have a backup plan in case of inclement weather.
+      
+      9. **Cultural Sensitivity:**
+         - Respect the local customs and traditions.
+         - Inform your guests about any cultural nuances to ensure everyone is aware and respectful.
+      
+      10. **Transportation:**
+          - Arrange transportation for you and your guests from the airport to the venue.
+          - Consider organizing group activities to enhance the overall experience.
+      
+      11. **Communication:**
+          - Keep open communication with your guests, providing them with all necessary information.
+          - Create a wedding website with details on travel, accommodations, and the wedding itinerary.
+      
+      12. **Photography and Videography:**
+          - Hire local photographers and videographers who are familiar with the destination and can capture the essence of the location.
+      
+      Remember that planning a destination wedding requires additional attention to detail, so start early and enlist the help of professionals to ensure a beautiful and stress-free celebration.</p>
+    </div>
+</div>
+<h2 class="catrins">FOR FOOD ORDERS</h2>
+<div id="images-container2">
+    <h2 class="birthday2">Starters</h2>
+    <img src="https://www.deliciousmagazine.co.uk/wp-content/uploads/2020/01/best-ever-starters.jpg" alt="Starters" class="Starters" width="1000" height="400"> 
+    <div class="birthday3"> 
+      <p>Finger Foods: <br>
+      Mini sliders or small sandwiches with various fillings (chicken, beef, or vegetarian).
+      Stuffed mushrooms with cheese or spinach.
+      Caprese skewers with cherry tomatoes, fresh mozzarella, and basil.
+      Chicken skewers or satay with dipping sauces.
+      Dips and Chips: <br>
+      Guacamole with tortilla chips.
+      Salsa and sour cream with a selection of nachos.
+      Spinach and artichoke dip with breadsticks or pita chips.
+      Hummus served with vegetable sticks or pita triangles.
+      Cheese and Charcuterie Board: <br>
+      Assorted cheeses (hard and soft) with crackers and bread.
+      Cured meats like salami and prosciutto.
+      Olives, pickles, and a variety of nuts.
+      Vegetarian Options: <br>
+      Veggie spring rolls or samosas.
+      Bruschetta with diced tomatoes, basil, and balsamic glaze.
+      Sweet potato fries or zucchini sticks with dipping sauce.
+      Seafood Delights: <br>
+      Shrimp cocktail with cocktail sauce.
+      Crab cakes or mini crab-stuffed mushrooms.
+      Smoked salmon on cucumber rounds.
+      Miniature Quiches or Tartlets: <br>
+      Mini quiches with various fillings (spinach and feta, bacon and cheese).
+      Tartlets with goat cheese and caramelized onions.
+      Remember to consider any dietary restrictions or preferences of your guests when planning the menu. Offering a mix of flavors and textures ensures there's something for everyone to enjoy. Additionally, presentation can elevate the experience, so consider arranging the starters on visually appealing platters or trays.</p>
+      </div> 
+      <h2 class="birthday2">Cold-Drinks</h2>
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/186470d0-64c7-43cf-9e24-481dd5abfd58/d25v7zp-8ee97f9d-6ff3-40e6-b2e3-e9a64f45faf4.jpg/v1/fill/w_800,h_534,q_75,strp/cold_drinks_by_poshphotos_d25v7zp-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTM0IiwicGF0aCI6IlwvZlwvMTg2NDcwZDAtNjRjNy00M2NmLTllMjQtNDgxZGQ1YWJmZDU4XC9kMjV2N3pwLThlZTk3ZjlkLTZmZjMtNDBlNi1iMmUzLWU5YTY0ZjQ1ZmFmNC5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.-dCg8wghc4wizs6EOs0vUxKKnBcZ1cLoo0rCY3MgEew" alt="Cold-Drinks" class="Cold-Drinks" width="1000" height="400">
+      <div class="birthday3">
+        <p>Types of Cold Drinks: <br>
+        Carbonated Soft Drinks: These include popular sodas like cola, lemon-lime, orange, root beer, and various fruit-flavored sodas.
+        Non-carbonated Drinks: This category includes iced tea, fruit juices, lemonades, and other non-fizzy beverages.
+        Iced Coffee and Iced Tea: Cold versions of these traditional hot drinks are often popular, especially in warmer climates.
+        Smoothies: Blended beverages made with fruits, yogurt, ice, and sometimes sweeteners or protein additives.
+        Milkshakes: Cold beverages made with milk, ice cream, and flavorings like chocolate, vanilla, or fruit.
+        Energy Drinks: Beverages containing stimulants like caffeine, taurine, and B-vitamins, designed to provide a quick energy boost.
+        Sports Drinks: Formulated to rehydrate and replenish electrolytes after physical activity.
+        Packaging: <br>        
+        Cold drinks are commonly available in various packaging, including cans, bottles, and cartons. Some are also available on tap at restaurants and cafes.
+        Carbonation: <br>       
+        Many cold drinks, especially sodas, are carbonated, meaning they contain dissolved carbon dioxide, which creates bubbles and a fizzy sensation when consumed.
+        Flavor Varieties: <br>        
+        Cold drinks come in a wide array of flavors, ranging from traditional cola and lemon-lime to exotic fruit combinations.
+        Health Considerations: <br>        
+        Some cold drinks, especially sodas and energy drinks, can be high in sugar and calories. Many people opt for diet or low-calorie versions.
+        Caffeinated vs. Non-Caffeinated: <br>       
+        Some cold drinks, like iced tea and iced coffee, contain caffeine, while others, like fruit juices, may be caffeine-free.
+        Popular Brands: <br>       
+        Numerous companies produce and market cold drinks globally. Some well-known brands include Coca-Cola, Pepsi, Sprite, 7UP, and various local or regional brands.
+        Cultural Preferences: <br>       
+        The types of cold drinks preferred can vary by region and culture. For example, in some countries, herbal iced teas are more popular, while in others, carbonated sodas dominate.</p>
+      </div>
+      <h2 class="birthday2">Main Course</h2>
+      <img src="https://th.bing.com/th/id/OIP.4H0bULUGUTfbEfyTC4_hlQHaFj?rs=1&pid=ImgDetMain" alt="Main Course" class="Main Course" width="1000" height="500">
+    <div class="birthday3">
+      <p>Regional Diversity: <br>
+        India is a vast country with diverse geographical and cultural influences, and this is reflected in its cuisine. Each region has its own unique culinary traditions, ingredients, and cooking styles.
+        Spices: <br>        
+        Indian cuisine is renowned for its use of spices, which contribute to the rich and complex flavors of the dishes. Common spices include cumin, coriander, turmeric, cardamom, cloves, cinnamon, and mustard seeds.
+        Vegetarian and Vegan Options: <br>        
+        A significant portion of Indian cuisine is vegetarian, and many traditional Indian dishes are naturally vegan. Lentils, beans, vegetables, and grains play a crucial role in vegetarian dishes.
+        Staple Foods: <br>       
+        Rice and wheat are staple foods in India. Various types of bread, such as chapati, naan, and dosa, are popular in different regions.
+        Curries: <br>        
+        The term "curry" is often used to describe Indian dishes, but it's important to note that Indian curries are diverse and can be based on meat, poultry, fish, or vegetables. They are typically made with a blend of spices, herbs, and sometimes yogurt or coconut milk.
+        Tandoori Cuisine: <br>        
+        Tandoori dishes are cooked in a traditional clay oven called a tandoor. Tandoori meats, such as chicken and lamb, are marinated in a mixture of yogurt and spices before being cooked at high temperatures.
+        Street Food: <br>       
+        Indian street food is famous for its variety and flavors. Common street snacks include chaat (a mix of savory snacks with chutneys), samosas, pav bhaji, and various types of kebabs.
+        Desserts: <br>       
+        Indian desserts, or "mithai," are often sweet and made with ingredients like milk, ghee (clarified butter), sugar, and a variety of nuts. Popular desserts include gulab jamun, jalebi, rasgulla, and kheer.
+        Chutneys and Pickles: <br>       
+        Indian meals are often accompanied by a variety of chutneys and pickles made from fruits, vegetables, herbs, and spices. These add additional flavors and textures to the meal.
+        Cultural and Religious Influences: <br>        
+        Indian food is influenced by cultural and religious practices. For example, some regions have a strong vegetarian tradition due to religious beliefs, while others have a preference for certain meats.
+        Ayurvedic Principles: <br>        
+        Ayurveda, the ancient Indian system of medicine, has also influenced Indian cooking. Many dishes are prepared with consideration of balancing the six tastes—sweet, sour, salty, bitter, pungent, and astringent—for overall well-being.
+        Ghee and Dairy Products: <br>       
+        Ghee (clarified butter) is commonly used in Indian cooking, providing a rich and nutty flavor. Various dairy products like yogurt and paneer (Indian cottage cheese) are also integral to many recipes.</p>
+      </div>
+      <h2 class="birthday2">Deserts</h2>
+      <img src="https://th.bing.com/th/id/OIP.VbNpBo0D94HYyDbO84HZ2gHaD5?rs=1&pid=ImgDetMain" alt="Deserts" class="Deserts" width="1000" height="400">
+    <div class="birthday3">
+      <p>Gulab Jamun: <br>
+        Soft, deep-fried dough balls made from milk solids and flour, soaked in a sugar syrup. They are often flavored with cardamom and garnished with chopped nuts.
+        Rasgulla: <br>
+        Spongy, white, cheese balls soaked in sugar syrup. Originating from the eastern part of India, Rasgulla is a light and refreshing dessert.
+        Jalebi: <br>       
+        Deep-fried wheat flour batter in a pretzel or circular shape, soaked in sugar syrup. Jalebi is known for its orange color and coiled, syrupy texture.
+        Barfi (Burfi): <br>       
+        A sweet confection made from condensed milk, sugar, and various flavorings. Barfi comes in different varieties, including coconut barfi, khoya barfi, and almond barfi.
+        Halwa: <br>       
+        A dense and sweet dish made from ingredients like semolina (suji), wheat, lentils, or carrots. Ghee, sugar, and a variety of nuts and spices are often added for flavor.
+        Kheer: <br>        
+        A creamy rice pudding made with rice, milk, sugar, and flavored with cardamom, saffron, and nuts. It is often garnished with slivered almonds or pistachios.
+        Ladoo: <br>       
+        Round sweets made from various ingredients such as gram flour (besan), semolina, or chickpea flour. They can include added ingredients like coconut, nuts, and ghee.
+        Gajar ka Halwa: <br>        
+        A popular winter dessert made from grated carrots cooked with milk, ghee, sugar, and garnished with nuts. It has a rich and comforting taste.
+        Phirni: <br>        
+        A creamy rice pudding similar to kheer, but with a finer texture. It is often flavored with cardamom, saffron, and rose water and set in earthen pots.
+        Mysore Pak: <br>       
+        A traditional South Indian sweet made from gram flour, ghee, and sugar. It has a crumbly texture and is often garnished with chopped nuts.
+        Sandesh: <br>       
+        A Bengali sweet made from fresh paneer (Indian cottage cheese) and sugar. It is often flavored with cardamom and garnished with pistachios or saffron.
+        Kaju Katli: <br>        
+        A diamond-shaped sweet made from cashew nuts, sugar, and ghee. It has a smooth and melt-in-the-mouth texture.</p>
+      </div>
+</div>
+<!-- footer section -->/
+<section class="footer" id="footer">
+  <div class="box-container">
+
+    <div class="box">
+      <h3>Holders</h3>
+      <a href="#"><i class="fas fa-arrow-right"></i>Ansh Shriwas </a>
+      <a href="#"><i class="fas fa-arrow-right"></i>Piyush Gathode </a>
+      <a href="#"><i class="fas fa-arrow-right"></i>Palash Shete </a>
+      <a href="#"><i class="fas fa-arrow-right"></i>Vanshvardhan Sorte </a>
+    </div>
+    <div class="box">
+      <h3>Follow us</h3>
+      <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+      <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+      <a style="font-size:20px;" href="https://www.instagram.com/piy8320"><i class="fab fa-instagram fa-bounce"></i>Instagram</a>
+      <a href="#"><i class="fab fa-linkedin"></i>Linkedin</a>
+  </div>
+  <div class="box">
+    <h3>Branches</h3>
+    <a href="#"><i class="fas fa-map-marker-alt"></i>Mumbai </a>
+    <a href="#"><i class="fas fa-map-marker-alt"></i>Pune </a>
+    <a href="#"><i class="fas fa-map-marker-alt"></i>Nagpur </a>
+    <a href="#"><i class="fas fa-map-marker-alt"></i>Delhi </a>
+    <a href="#"><i class="fas fa-map-marker-alt"></i>Kolapur </a>
+</div>
+<div class="box">
+  <h3>Contact Infos</h3>
+  <a href="#"><i class="fas fa-phone"></i>564-4212-752</a>
+  <a href="tel:6264537982"><i class="fas fa-phone"></i>6264537982</a>
+  <a href="mailto:ghatodepiyush7@gmail.com"><i class="fas fa-envelope"></i>ghatodepiyush7@gmail.com</a>
+  <a href="mailto:anshshriwas419@gmail.com"><i class="fas fa-envelope"></i>anshshriwas419@gmail.com </a>
+  <a href="location.html" target="_blank"><i class="fas fa-map-marker-alt"></i>nagpur , India-440001 </a>
+  <a style="font-size:20px;" href="#"><i class="fa-brands fa-whatsapp fa-bounce"></i>+91 7420970114 </a>
+  <a style="font-size:20px;" href="#"><i class="fa-brands fa-whatsapp fa-bounce"></i>+91 7796887988 </a>
+</div>   
+</section>
+<footer>
+  <P class="center"> | All copyright &copy; resvered |</P>
+</footer>
+
+
+<div id="confetti"></div>
+<script>
+      const confettiContainer = document.getElementById('confetti');
+      const numConfetti = 50;
+
+      for (let i = 0; i < numConfetti; i++) {
+          const confetti = document.createElement('div');
+          confetti.className = 'confetti-piece';
+          confetti.style.left = Math.random() * 100 + 'vw';
+          confetti.style.animationDuration = (Math.random() * 2 + 1) + 's';
+          confettiContainer.appendChild(confetti);
+      }
+    
+const PI2 = Math.PI * 2
+const random = (min, max) => Math.random() * (max - min + 1) + min | 0
+const timestamp = _ => new Date().getTime()
+
+
+class Birthday {
+  constructor() {
+    this.resize()
+
+    
+    this.fireworks = []
+    this.counter = 0
+
+  }
+  
+  resize() {
+    this.width = canvas.width = window.innerWidth
+    let center = this.width / 2 | 0
+    this.spawnA = center - center / 4 | 0
+    this.spawnB = center + center / 4 | 0
+    
+    this.height = canvas.height = window.innerHeight
+    this.spawnC = this.height * .1
+    this.spawnD = this.height * .5
+    
+  }
+  
+  onClick(evt) {
+     let x = evt.clientX || evt.touches && evt.touches[0].pageX
+     let y = evt.clientY || evt.touches && evt.touches[0].pageY
+     
+     let count = random(3,5)
+     for(let i = 0; i < count; i++) this.fireworks.push(new Firework(
+        random(this.spawnA, this.spawnB),
+        this.height,
+        x,
+        y,
+        random(0, 260),
+        random(30, 110)))
+          
+     this.counter = -1
+     
+  }
+  
+  update(delta) {
+    ctx.globalCompositeOperation = 'hard-light'
+    ctx.fillStyle = `rgba(20,20,20,${ 7 * delta })`
+    ctx.fillRect(0, 0, this.width, this.height)
+
+    ctx.globalCompositeOperation = 'lighter'
+    for (let firework of this.fireworks) firework.update(delta)
+
+    
+    this.counter += delta * 3 // each second
+    if (this.counter >= 1) {
+      this.fireworks.push(new Firework(
+        random(this.spawnA, this.spawnB),
+        this.height,
+        random(0, this.width),
+        random(this.spawnC, this.spawnD),
+        random(0, 360),
+        random(30, 110)))
+      this.counter = 0
+    }
+
+    
+    if (this.fireworks.length > 1000) this.fireworks = this.fireworks.filter(firework => !firework.dead)
+
+  }
+}
+
+class Firework {
+  constructor(x, y, targetX, targetY, shade, offsprings) {
+    this.dead = false
+    this.offsprings = offsprings
+
+    this.x = x
+    this.y = y
+    this.targetX = targetX
+    this.targetY = targetY
+
+    this.shade = shade
+    this.history = []
+  }
+  update(delta) {
+    if (this.dead) return
+
+    let xDiff = this.targetX - this.x
+    let yDiff = this.targetY - this.y
+    if (Math.abs(xDiff) > 3 || Math.abs(yDiff) > 3) { // is still moving
+      this.x += xDiff * 2 * delta
+      this.y += yDiff * 2 * delta
+
+      this.history.push({
+        x: this.x,
+        y: this.y
+      })
+
+      if (this.history.length > 20) this.history.shift()
+
+    } else {
+      if (this.offsprings && !this.madeChilds) {
+        
+        let babies = this.offsprings / 2
+        for (let i = 0; i < babies; i++) {
+          let targetX = this.x + this.offsprings * Math.cos(PI2 * i / babies) | 0
+          let targetY = this.y + this.offsprings * Math.sin(PI2 * i / babies) | 0
+
+          birthday.fireworks.push(new Firework(this.x, this.y, targetX, targetY, this.shade, 0))
+
+        }
+
+      }
+      this.madeChilds = true
+      this.history.shift()
+    }
+    
+    if (this.history.length === 0) this.dead = true
+    else if (this.offsprings) { 
+        for (let i = 0; this.history.length > i; i++) {
+          let point = this.history[i]
+          ctx.beginPath()
+          ctx.fillStyle = 'hsl(' + this.shade + ',100%,' + i + '%)'
+          ctx.arc(point.x, point.y, 1, 0, PI2, false)
+          ctx.fill()
+        } 
+      } else {
+      ctx.beginPath()
+      ctx.fillStyle = 'hsl(' + this.shade + ',100%,50%)'
+      ctx.arc(this.x, this.y, 1, 0, PI2, false)
+      ctx.fill()
+    }
+
+  }
+}
+
+let canvas = document.getElementById('birthday')
+let ctx = canvas.getContext('2d')
+
+let then = timestamp()
+
+let birthday = new Birthday
+window.onresize = () => birthday.resize()
+document.onclick = evt => birthday.onClick(evt)
+document.ontouchstart = evt => birthday.onClick(evt)
+
+  ;(function loop(){
+  	requestAnimationFrame(loop)
+
+  	let now = timestamp()
+  	let delta = now - then
+
+    then = now
+    birthday.update(delta / 1000)
+  	
+
+  })()
+</script>
+</body>
+</html>

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    
+    <style>
+   body {
+  margin: 0;
+  background: #020202;
+  cursor: crosshair;
+
+}
+.center {
+  text-align: center;
+  padding: 0%;
+  margin: auto;
+}
+.birthday{
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+img {
+  max-width: 320px;
+  float: left;
+  border: 3px solid rgb(176, 112, 112);
+  border-radius: 10px;
+  margin-right: 15px;
+}
+.birthday2 {
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.mainheading {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  font-family: Nunito;
+  color: cornflowerblue;
+  font-size: 50px;
+}
+.mainheading:hover {
+  color:wheat;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.catrins {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: cornflowerblue;
+  font-size: 50px;
+  padding: 20px;
+}
+.catrins:hover {
+  color:rgba(31, 221, 196, 0.63);
+  text-decoration: underline;
+  font-weight: bold;
+}
+.birthday1 {
+  display: flex;
+  color: wheat;
+}
+.birthday3 {
+  display: flex;
+  color: wheat;
+}
+/* footer */
+
+.footer{
+    background: #111;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap: 1.5rem;
+    display: flex;
+}
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color:purple;
+    display: flex;
+
+}
+.footer .box-container .box a{
+    display:block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #fff;
+    display: flex;
+    font-style: none;
+}
+.footer .box-container a i{
+    padding-right: .5rem;
+    color: blue;
+    display: flex;
+}
+.footer .box-container .box a:hover i{
+    padding-right:2rem;
+    color: #fff;
+    display: flex;
+}
+.center {
+    background:#111;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    border-top: .1rem solid #222;
+    display: flex;
+    justify-content: center;
+}
+#confetti {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .confetti-piece {
+            width: 10px;
+            height: 10px;
+            background-color: #e44d26;
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+h2 {
+    color: #fff;
+    display: flex;
+    font: 1000;
+    text-align: center;
+}
+canvas{display:block}
+h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 5em;
+  font-weight: 900;
+  -webkit-user-select: none;
+  user-select: none;
+}
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday</h1>
+<canvas id="birthday"></canvas>
+<h2 class="mainheading">FOR DECORATION DETAILS</h2>
+<div id="images-container">
+    <h2 class="birthday">Ballons</h2>
+    <img src="https://utsavbirthday.com/wp-content/uploads/2020/09/61g28xh5ZL._SL1174_-4.jpg" alt="Balloon" class="birthday-image" width="1000" height="400">
+    <div class="birthday1">
+      <p>A balloon is a flexible bag that can be inflated with a gas,
+        such as helium, hydrogen, nitrous oxide, oxygen, and air.
+        For special tasks, balloons can be filled with smoke, liquid water,
+        granular media (e.g. sand, flour or rice), or light sources.
+        Modern day balloons are made from materials such as rubber,
+        latex, polychloroprene, or a nylon fabric, and can come in
+        many different colors. Some early balloons were made of 
+        dried animal bladders, such as the pig bladder. Some balloons
+        are used for decorative purposes or entertaining purposes,
+        while others are used for practical purposes such as meteorology,
+        medical treatment, military defense, or transportation.
+        A balloon's properties, including its low density and low cost,
+        have led to a wide range of applications.Balloons are used for decorating birthday parties, weddings, corporate functions, school events, and for other festive gatherings. The artists who use the round balloons to build are called "stackers" and the artists who use pencil balloons to build are called "twisters." Most commonly associated with helium balloon decor, more recently balloon decorators have been moving towards the creation of air-filled balloon decorations due to the non-renewable natural resource of helium limited in supply. The most common types of balloon decor include arches, columns, centerpieces, balloon drops, sculptures, and balloon bouquets. With the increased aptitude for balloon twisting as well as balloon stacking, the rise of the deco-twister manifests itself as the combination of stacking techniques as well as twisting techniques to create unique and interesting balloon decor options.Party balloons are mostly made of a natural latex tapped from rubber trees, and can be filled with air, helium, water, or any other suitable liquid or gas. The rubber's elasticity makes the volume adjustable.
+        Twisting balloons can be used to create decor centerpieces for events and to create a more unique look than can be provided by foil balloons.
+        Often the term "party balloon" will refer to a twisting balloon or pencil balloon. These balloons are manipulated to create shapes and figures for parties and events, typically along with entertainment.
+        Filling the balloon with air can be done with the mouth, a manual or electric inflater (such as a hand pump), or with a source of compressed gas.
+        When rubber or plastic balloons are filled with helium so that they float, they typically retain their buoyancy for only a day or so, sometimes longer. The enclosed helium atoms escape through small pores in the latex which are larger than the helium atoms. However, some types of balloons are labelled "helium-grade". These balloons are often thicker and have less porosity.Balloons filled with air usually hold their size and shape much longer, sometimes for up to a week.</p>
+    </div>
+    <h2 class="birthday">Cakes</h2>
+    <img src="https://th.bing.com/th/id/OIP.6oi4_LsCHmGDHsE8g1NLCAHaE8?rs=1&pid=ImgDetMain" alt="Cake" class="birthday-image" width="1000" height="400">
+   <div class="birthday1"> 
+    <p>History: <br>
+      The tradition of celebrating birthdays with cakes dates back to ancient civilizations. The Greeks would make round honey cakes as an offering to Artemis, the goddess of the moon.
+      Varieties: <br>
+      Birthday cakes come in various shapes, sizes, and flavors. Some common flavors include chocolate, vanilla, strawberry, and red velvet.
+      They can be single-layered or multi-layered, and they may have different fillings and frostings.
+      Decorations: <br>
+      Birthday cakes are often decorated with colorful frosting, icing, and edible decorations. Common decorations include candles, sprinkles, edible flowers, and personalized messages.
+      Candles: <br>     
+      Lighting candles on a birthday cake is a tradition that symbolizes the passing of another year in a person's life. The number of candles often corresponds to the person's age.
+      Customization: <br>     
+      Many people choose to have their birthday cakes customized to reflect their interests, hobbies, or favorite themes. This can include designs related to sports, movies, books, or other personal preferences.
+      Specialty Cakes: <br>     
+      Some birthdays call for special cakes, such as tiered wedding-style cakes for milestone birthdays like 18, 21, 50, etc.
+      Cultural Variations: <br>     
+      Different cultures may have unique traditions and preferences regarding birthday cakes. For example, in some cultures, fruitcakes or special types of pastries are preferred.
+      Health Considerations: <br>   
+      With growing health awareness, there is an increasing demand for healthier alternatives to traditional birthday cakes. This has led to the popularity of options like fruit cakes, gluten-free cakes, and cakes with reduced sugar content.
+      Online Ordering: <br>     
+      With the rise of online platforms, it has become easier to order custom birthday cakes from bakeries and have them delivered to your doorstep.
+      DIY Cakes: <br>
+      Some people enjoy baking their own birthday cakes as a personal and creative expression. There are countless recipes and tutorials available for those who want to try their hand at baking.</p>
+    </div>
+    <h2 class="birthday">Gifts</h2>
+    <img src="https://th.bing.com/th/id/OIP.Ce1JfJXwXCE_T8q9kGJXbgHaE8?rs=1&pid=ImgDetMain" alt="Gift" class="birthday-image" width="1000" height="400">
+  <div class="birthday1">
+    <p>Types of Birthday Gifts: <br>
+      Material Gifts: These are physical items such as clothing, accessories, gadgets, books, or any tangible present.
+      Experiences: Some people prefer experiences as gifts, like concert tickets, spa days, or travel adventures.
+      Gift Cards: Providing a gift card allows the recipient to choose something they truly want or need from a specific store or service.
+      DIY Gifts: Handmade gifts, such as crafts, artwork, or baked goods, add a personal touch to the celebration.
+      Consideration of Recipient's Interests: <br>
+      The best gifts often reflect the recipient's hobbies, interests, and preferences. Knowing what the person enjoys can guide you in selecting a meaningful and thoughtful gift.
+      Surprises and Unexpected Gifts:
+      Some people love surprises, so unexpected gifts can add an extra element of joy to the celebration. It might be something the person didn't know they wanted but ends up loving.
+      Personalized Gifts: <br>
+      Personalized gifts, like custom-made items or items with the recipient's name or a special date, can make the gift more meaningful and unique.
+      Age-Appropriate Gifts: <br>
+      Consider the age of the person when selecting a gift. Children might enjoy toys or games, while adults might appreciate more practical or luxurious items.
+      Online Shopping: <br>
+      With the convenience of online shopping, it's easier than ever to find and order birthday gifts. Many online platforms offer a wide range of options, from traditional gifts to unique and niche items.
+      Gift Wrapping and Presentation:
+      The presentation of a gift can be just as important as the gift itself. Thoughtful wrapping and a personalized note can enhance the overall experience for the recipient.
+      Gift Etiquette: <br>
+      It's generally considered polite to bring or send a birthday gift if you're attending a birthday celebration. However, the nature of the gift may depend on your relationship with the person and the formality of the event.
+      Budget Considerations: <br>
+      Gifts come in various price ranges, and it's important to consider your budget when selecting a gift. It's the thought and effort put into the gift that often matter most.
+      Charitable Gifts: <br>
+      Some people appreciate gifts that contribute to a charitable cause on their behalf. For example, donations to a favorite charity or an organization that holds significance for the recipient.</p>
+    </div>
+</div>
+<h2 class="catrins">FOR FOOD ORDERS</h2>
+<div id="images-container2">
+    <h2 class="birthday2">Starters</h2>
+    <img src="https://www.deliciousmagazine.co.uk/wp-content/uploads/2020/01/best-ever-starters.jpg" alt="Starters" class="Starters" width="1000" height="400"> 
+    <div class="birthday3"> 
+      <p>Finger Foods: <br>
+      Mini sliders or small sandwiches with various fillings (chicken, beef, or vegetarian).
+      Stuffed mushrooms with cheese or spinach.
+      Caprese skewers with cherry tomatoes, fresh mozzarella, and basil.
+      Chicken skewers or satay with dipping sauces.
+      Dips and Chips: <br>
+      Guacamole with tortilla chips.
+      Salsa and sour cream with a selection of nachos.
+      Spinach and artichoke dip with breadsticks or pita chips.
+      Hummus served with vegetable sticks or pita triangles.
+      Cheese and Charcuterie Board: <br>
+      Assorted cheeses (hard and soft) with crackers and bread.
+      Cured meats like salami and prosciutto.
+      Olives, pickles, and a variety of nuts.
+      Vegetarian Options: <br>
+      Veggie spring rolls or samosas.
+      Bruschetta with diced tomatoes, basil, and balsamic glaze.
+      Sweet potato fries or zucchini sticks with dipping sauce.
+      Seafood Delights: <br>
+      Shrimp cocktail with cocktail sauce.
+      Crab cakes or mini crab-stuffed mushrooms.
+      Smoked salmon on cucumber rounds.
+      Miniature Quiches or Tartlets: <br>
+      Mini quiches with various fillings (spinach and feta, bacon and cheese).
+      Tartlets with goat cheese and caramelized onions.
+      Remember to consider any dietary restrictions or preferences of your guests when planning the menu. Offering a mix of flavors and textures ensures there's something for everyone to enjoy. Additionally, presentation can elevate the experience, so consider arranging the starters on visually appealing platters or trays.</p>
+      </div> 
+      <h2 class="birthday2">Cold-Drinks</h2>
+      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/186470d0-64c7-43cf-9e24-481dd5abfd58/d25v7zp-8ee97f9d-6ff3-40e6-b2e3-e9a64f45faf4.jpg/v1/fill/w_800,h_534,q_75,strp/cold_drinks_by_poshphotos_d25v7zp-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTM0IiwicGF0aCI6IlwvZlwvMTg2NDcwZDAtNjRjNy00M2NmLTllMjQtNDgxZGQ1YWJmZDU4XC9kMjV2N3pwLThlZTk3ZjlkLTZmZjMtNDBlNi1iMmUzLWU5YTY0ZjQ1ZmFmNC5qcGciLCJ3aWR0aCI6Ijw9ODAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.-dCg8wghc4wizs6EOs0vUxKKnBcZ1cLoo0rCY3MgEew" alt="Cold-Drinks" class="Cold-Drinks" width="1000" height="400">
+      <div class="birthday3">
+        <p>Types of Cold Drinks: <br>
+        Carbonated Soft Drinks: These include popular sodas like cola, lemon-lime, orange, root beer, and various fruit-flavored sodas.
+        Non-carbonated Drinks: This category includes iced tea, fruit juices, lemonades, and other non-fizzy beverages.
+        Iced Coffee and Iced Tea: Cold versions of these traditional hot drinks are often popular, especially in warmer climates.
+        Smoothies: Blended beverages made with fruits, yogurt, ice, and sometimes sweeteners or protein additives.
+        Milkshakes: Cold beverages made with milk, ice cream, and flavorings like chocolate, vanilla, or fruit.
+        Energy Drinks: Beverages containing stimulants like caffeine, taurine, and B-vitamins, designed to provide a quick energy boost.
+        Sports Drinks: Formulated to rehydrate and replenish electrolytes after physical activity.
+        Packaging: <br>        
+        Cold drinks are commonly available in various packaging, including cans, bottles, and cartons. Some are also available on tap at restaurants and cafes.
+        Carbonation: <br>       
+        Many cold drinks, especially sodas, are carbonated, meaning they contain dissolved carbon dioxide, which creates bubbles and a fizzy sensation when consumed.
+        Flavor Varieties: <br>        
+        Cold drinks come in a wide array of flavors, ranging from traditional cola and lemon-lime to exotic fruit combinations.
+        Health Considerations: <br>        
+        Some cold drinks, especially sodas and energy drinks, can be high in sugar and calories. Many people opt for diet or low-calorie versions.
+        Caffeinated vs. Non-Caffeinated: <br>       
+        Some cold drinks, like iced tea and iced coffee, contain caffeine, while others, like fruit juices, may be caffeine-free.
+        Popular Brands: <br>       
+        Numerous companies produce and market cold drinks globally. Some well-known brands include Coca-Cola, Pepsi, Sprite, 7UP, and various local or regional brands.
+        Cultural Preferences: <br>       
+        The types of cold drinks preferred can vary by region and culture. For example, in some countries, herbal iced teas are more popular, while in others, carbonated sodas dominate.</p>
+      </div>
+      <h2 class="birthday2">Main Course</h2>
+      <img src="https://th.bing.com/th/id/OIP.4H0bULUGUTfbEfyTC4_hlQHaFj?rs=1&pid=ImgDetMain" alt="Main Course" class="Main Course" width="1000" height="500">
+    <div class="birthday3">
+      <p>Regional Diversity: <br>
+        India is a vast country with diverse geographical and cultural influences, and this is reflected in its cuisine. Each region has its own unique culinary traditions, ingredients, and cooking styles.
+        Spices: <br>        
+        Indian cuisine is renowned for its use of spices, which contribute to the rich and complex flavors of the dishes. Common spices include cumin, coriander, turmeric, cardamom, cloves, cinnamon, and mustard seeds.
+        Vegetarian and Vegan Options: <br>        
+        A significant portion of Indian cuisine is vegetarian, and many traditional Indian dishes are naturally vegan. Lentils, beans, vegetables, and grains play a crucial role in vegetarian dishes.
+        Staple Foods: <br>       
+        Rice and wheat are staple foods in India. Various types of bread, such as chapati, naan, and dosa, are popular in different regions.
+        Curries: <br>        
+        The term "curry" is often used to describe Indian dishes, but it's important to note that Indian curries are diverse and can be based on meat, poultry, fish, or vegetables. They are typically made with a blend of spices, herbs, and sometimes yogurt or coconut milk.
+        Tandoori Cuisine: <br>        
+        Tandoori dishes are cooked in a traditional clay oven called a tandoor. Tandoori meats, such as chicken and lamb, are marinated in a mixture of yogurt and spices before being cooked at high temperatures.
+        Street Food: <br>       
+        Indian street food is famous for its variety and flavors. Common street snacks include chaat (a mix of savory snacks with chutneys), samosas, pav bhaji, and various types of kebabs.
+        Desserts: <br>       
+        Indian desserts, or "mithai," are often sweet and made with ingredients like milk, ghee (clarified butter), sugar, and a variety of nuts. Popular desserts include gulab jamun, jalebi, rasgulla, and kheer.
+        Chutneys and Pickles: <br>       
+        Indian meals are often accompanied by a variety of chutneys and pickles made from fruits, vegetables, herbs, and spices. These add additional flavors and textures to the meal.
+        Cultural and Religious Influences: <br>        
+        Indian food is influenced by cultural and religious practices. For example, some regions have a strong vegetarian tradition due to religious beliefs, while others have a preference for certain meats.
+        Ayurvedic Principles: <br>        
+        Ayurveda, the ancient Indian system of medicine, has also influenced Indian cooking. Many dishes are prepared with consideration of balancing the six tastes—sweet, sour, salty, bitter, pungent, and astringent—for overall well-being.
+        Ghee and Dairy Products: <br>       
+        Ghee (clarified butter) is commonly used in Indian cooking, providing a rich and nutty flavor. Various dairy products like yogurt and paneer (Indian cottage cheese) are also integral to many recipes.</p>
+      </div>
+      <h2 class="birthday2">Deserts</h2>
+      <img src="https://th.bing.com/th/id/OIP.VbNpBo0D94HYyDbO84HZ2gHaD5?rs=1&pid=ImgDetMain" alt="Deserts" class="Deserts" width="1000" height="400">
+    <div class="birthday3">
+      <p>Gulab Jamun: <br>
+        Soft, deep-fried dough balls made from milk solids and flour, soaked in a sugar syrup. They are often flavored with cardamom and garnished with chopped nuts.
+        Rasgulla: <br>
+        Spongy, white, cheese balls soaked in sugar syrup. Originating from the eastern part of India, Rasgulla is a light and refreshing dessert.
+        Jalebi: <br>       
+        Deep-fried wheat flour batter in a pretzel or circular shape, soaked in sugar syrup. Jalebi is known for its orange color and coiled, syrupy texture.
+        Barfi (Burfi): <br>       
+        A sweet confection made from condensed milk, sugar, and various flavorings. Barfi comes in different varieties, including coconut barfi, khoya barfi, and almond barfi.
+        Halwa: <br>       
+        A dense and sweet dish made from ingredients like semolina (suji), wheat, lentils, or carrots. Ghee, sugar, and a variety of nuts and spices are often added for flavor.
+        Kheer: <br>        
+        A creamy rice pudding made with rice, milk, sugar, and flavored with cardamom, saffron, and nuts. It is often garnished with slivered almonds or pistachios.
+        Ladoo: <br>       
+        Round sweets made from various ingredients such as gram flour (besan), semolina, or chickpea flour. They can include added ingredients like coconut, nuts, and ghee.
+        Gajar ka Halwa: <br>        
+        A popular winter dessert made from grated carrots cooked with milk, ghee, sugar, and garnished with nuts. It has a rich and comforting taste.
+        Phirni: <br>        
+        A creamy rice pudding similar to kheer, but with a finer texture. It is often flavored with cardamom, saffron, and rose water and set in earthen pots.
+        Mysore Pak: <br>       
+        A traditional South Indian sweet made from gram flour, ghee, and sugar. It has a crumbly texture and is often garnished with chopped nuts.
+        Sandesh: <br>       
+        A Bengali sweet made from fresh paneer (Indian cottage cheese) and sugar. It is often flavored with cardamom and garnished with pistachios or saffron.
+        Kaju Katli: <br>        
+        A diamond-shaped sweet made from cashew nuts, sugar, and ghee. It has a smooth and melt-in-the-mouth texture.</p>
+      </div>
+</div>
+<!-- footer section -->/
+<section class="footer" id="footer">
+  <div class="box-container">
+
+    <div class="box">
+      <h3>Holders</h3>
+      <a href="#"><i class="fas fa-arrow-right"></i>Ansh Shriwas </a>
+      <a href="#"><i class="fas fa-arrow-right"></i>Piyush Ghatode </a>
+      <a href="#"><i class="fas fa-arrow-right"></i>Palash Shete </a>
+      <a href="#"><i class="fas fa-arrow-right"></i>Vansh Sorte </a>
+    </div>
+    <div class="box">
+      <h3>Follow us</h3>
+      <a href="#"><i class="fab fa-facebook-f"></i>Facebook</a>
+      <a href="#"><i class="fab fa-twitter"></i>Twitter</a>
+      <a style="font-size:20px;" href="https://www.instagram.com/piy8320"><i class="fab fa-instagram fa-bounce"></i>Instagram</a>
+      <a href="#"><i class="fab fa-linkedin"></i>Linkedin</a>
+  </div>
+  <div class="box">
+    <h3>Branches</h3>
+    <a href="#"><i class="fas fa-map-marker-alt"></i>Mumbai </a>
+    <a href="#"><i class="fas fa-map-marker-alt"></i>Pune </a>
+    <a href="#"><i class="fas fa-map-marker-alt"></i>Nagpur </a>
+    <a href="#"><i class="fas fa-map-marker-alt"></i>Delhi </a>
+    <a href="#"><i class="fas fa-map-marker-alt"></i>Kolapur </a>
+</div>
+<div class="box">
+  <h3>Contact Infos</h3>
+  <a href="#"><i class="fas fa-phone"></i>564-4212-752</a>
+  <a href="tel:6264537982"><i class="fas fa-phone"></i>6264537982</a>
+  <a href="mailto:ghatodepiyush7@gmail.com"><i class="fas fa-envelope"></i>ghatodepiyush7@gmail.com</a>
+  <a href="mailto:anshshriwas419@gmail.com"><i class="fas fa-envelope"></i>anshshriwas419@gmail.com </a>
+  <a href="location.html" target="_blank"><i class="fas fa-map-marker-alt"></i>nagpur , India-440001 </a>
+  <a style="font-size:20px;" href="#"><i class="fa-brands fa-whatsapp fa-bounce"></i>+91 7420970114 </a>
+  <a style="font-size:20px;" href="#"><i class="fa-brands fa-whatsapp fa-bounce"></i>+91 7796887988 </a>
+</div>   
+</section>
+<footer>
+  <P class="center"> | All copyright &copy; resvered |</P>
+</footer>
+
+
+<div id="confetti"></div>
+<script>
+      const confettiContainer = document.getElementById('confetti');
+      const numConfetti = 50;
+
+      for (let i = 0; i < numConfetti; i++) {
+          const confetti = document.createElement('div');
+          confetti.className = 'confetti-piece';
+          confetti.style.left = Math.random() * 100 + 'vw';
+          confetti.style.animationDuration = (Math.random() * 2 + 1) + 's';
+          confettiContainer.appendChild(confetti);
+      }
+    
+const PI2 = Math.PI * 2
+const random = (min, max) => Math.random() * (max - min + 1) + min | 0
+const timestamp = _ => new Date().getTime()
+
+
+class Birthday {
+  constructor() {
+    this.resize()
+
+    
+    this.fireworks = []
+    this.counter = 0
+
+  }
+  
+  resize() {
+    this.width = canvas.width = window.innerWidth
+    let center = this.width / 2 | 0
+    this.spawnA = center - center / 4 | 0
+    this.spawnB = center + center / 4 | 0
+    
+    this.height = canvas.height = window.innerHeight
+    this.spawnC = this.height * .1
+    this.spawnD = this.height * .5
+    
+  }
+  
+  onClick(evt) {
+     let x = evt.clientX || evt.touches && evt.touches[0].pageX
+     let y = evt.clientY || evt.touches && evt.touches[0].pageY
+     
+     let count = random(3,5)
+     for(let i = 0; i < count; i++) this.fireworks.push(new Firework(
+        random(this.spawnA, this.spawnB),
+        this.height,
+        x,
+        y,
+        random(0, 260),
+        random(30, 110)))
+          
+     this.counter = -1
+     
+  }
+  
+  update(delta) {
+    ctx.globalCompositeOperation = 'hard-light'
+    ctx.fillStyle = `rgba(20,20,20,${ 7 * delta })`
+    ctx.fillRect(0, 0, this.width, this.height)
+
+    ctx.globalCompositeOperation = 'lighter'
+    for (let firework of this.fireworks) firework.update(delta)
+
+    
+    this.counter += delta * 3 // each second
+    if (this.counter >= 1) {
+      this.fireworks.push(new Firework(
+        random(this.spawnA, this.spawnB),
+        this.height,
+        random(0, this.width),
+        random(this.spawnC, this.spawnD),
+        random(0, 360),
+        random(30, 110)))
+      this.counter = 0
+    }
+
+    
+    if (this.fireworks.length > 1000) this.fireworks = this.fireworks.filter(firework => !firework.dead)
+
+  }
+}
+
+class Firework {
+  constructor(x, y, targetX, targetY, shade, offsprings) {
+    this.dead = false
+    this.offsprings = offsprings
+
+    this.x = x
+    this.y = y
+    this.targetX = targetX
+    this.targetY = targetY
+
+    this.shade = shade
+    this.history = []
+  }
+  update(delta) {
+    if (this.dead) return
+
+    let xDiff = this.targetX - this.x
+    let yDiff = this.targetY - this.y
+    if (Math.abs(xDiff) > 3 || Math.abs(yDiff) > 3) { // is still moving
+      this.x += xDiff * 2 * delta
+      this.y += yDiff * 2 * delta
+
+      this.history.push({
+        x: this.x,
+        y: this.y
+      })
+
+      if (this.history.length > 20) this.history.shift()
+
+    } else {
+      if (this.offsprings && !this.madeChilds) {
+        
+        let babies = this.offsprings / 2
+        for (let i = 0; i < babies; i++) {
+          let targetX = this.x + this.offsprings * Math.cos(PI2 * i / babies) | 0
+          let targetY = this.y + this.offsprings * Math.sin(PI2 * i / babies) | 0
+
+          birthday.fireworks.push(new Firework(this.x, this.y, targetX, targetY, this.shade, 0))
+
+        }
+
+      }
+      this.madeChilds = true
+      this.history.shift()
+    }
+    
+    if (this.history.length === 0) this.dead = true
+    else if (this.offsprings) { 
+        for (let i = 0; this.history.length > i; i++) {
+          let point = this.history[i]
+          ctx.beginPath()
+          ctx.fillStyle = 'hsl(' + this.shade + ',100%,' + i + '%)'
+          ctx.arc(point.x, point.y, 1, 0, PI2, false)
+          ctx.fill()
+        } 
+      } else {
+      ctx.beginPath()
+      ctx.fillStyle = 'hsl(' + this.shade + ',100%,50%)'
+      ctx.arc(this.x, this.y, 1, 0, PI2, false)
+      ctx.fill()
+    }
+
+  }
+}
+
+let canvas = document.getElementById('birthday')
+let ctx = canvas.getContext('2d')
+
+let then = timestamp()
+
+let birthday = new Birthday
+window.onresize = () => birthday.resize()
+document.onclick = evt => birthday.onClick(evt)
+document.ontouchstart = evt => birthday.onClick(evt)
+
+  ;(function loop(){
+  	requestAnimationFrame(loop)
+
+  	let now = timestamp()
+  	let delta = now - then
+
+    then = now
+    birthday.update(delta / 1000)
+  	
+
+  })()
+</script>
+</body>
+</html>
